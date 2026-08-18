@@ -29,7 +29,97 @@
    - What it does (1git config --global user.email "you@example.com"
 Sets your email for commits.
 
+git config
+Configures Git username or email.
 
+Example:
+
+bash
+git config --global user.name "Your Name"
+git config --global user.email "Your Email"
+View Config Values
+
+Example:
+
+bash
+git config --global --list
+Basic Workflow
+git add
+Stages changes for commit.
+
+Example:
+
+bash
+git add file.txt
+git commit
+Saves staged changes with a commit message.
+
+Example:
+
+bash
+git commit -m "Initial commit"
+git push
+Uploads local commits to the remote repository.
+
+Example:
+
+bash
+git push origin main
+git pull
+Fetches and merges changes from the remote repository.
+
+Example:
+
+bash
+git pull origin main
+Viewing Changes
+git status
+Shows the working directory status.
+
+Example:
+
+bash
+git status
+git log
+Displays commit history.
+
+Example:
+
+bash
+git log
+git log --oneline --graph --decorate
+Shows compact commit history with branch graph.
+
+Example:
+
+bash
+git log --oneline --graph --decorate
+git diff
+Shows changes between commits or working directory.
+
+Example:
+
+bash
+git diff
+Code
+
+---
+
+### How to use this
+1. Create the file:
+   ```bash
+   touch git-commands.md
+Paste the content above into it.
+
+Stage and commit:
+
+bash
+git add git-commands.md
+git commit -m "Add git commands reference"
+Push to GitHub:
+
+bash
+git push origin 
 ---
 
 ### Task 4: Stage and Commit
