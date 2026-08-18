@@ -29,6 +29,89 @@
    - What it does (1 line)
    - An example of how to use it
 
+🔹 Basic Workflow
+git init
+What it does: Initializes a new Git repository.
+
+Example:
+
+bash
+git init
+git clone <repo-url>
+What it does: Clones an existing repository.
+
+Example:
+
+bash
+git clone https://github.com/user/repo.git
+git add <file>
+What it does: Stages changes for commit.
+
+Example:
+
+bash
+git add file.txt
+git commit -m "message"
+What it does: Saves staged changes with a commit message.
+
+Example:
+
+bash
+git commit -m "Initial commit"
+git push origin main
+What it does: Pushes commits to the remote repository.
+
+Example:
+
+bash
+git push origin main
+git pull origin main
+What it does: Fetches and merges changes from remote.
+
+Example:
+
+bash
+git pull origin main
+🔹 Viewing Changes
+git status
+What it does: Shows the working directory status.
+
+Example:
+
+bash
+git status
+git log
+What it does: Displays commit history.
+
+Example:
+
+bash
+git log
+git log --oneline --graph --decorate
+What it does: Shows compact commit history with branch graph.
+
+Example:
+
+bash
+git log --oneline --graph --decorate
+git diff
+What it does: Shows changes between commits or working directory.
+
+Example:
+
+bash
+git diff
+✅ Quick Summary
+Setup: git config
+
+Start: git init, git clone
+
+Work: git add, git commit
+
+Remote: git push, git pull
+
+View: git status, git log, git diff
+
 ---
 
 ### Task 4: Stage and Commit
