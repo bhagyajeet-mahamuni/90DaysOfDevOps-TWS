@@ -29,105 +29,87 @@
    - What it does (1git config --global user.email "you@example.com"
 Sets your email for commits.
 
-# 1. Create the file
-echo "# Git Commands
+# Git Commands
 
 ## Setup & Config
 
 ### git init
 - Initializes a new Git repository.
 - **Example**:
-\`\`\`bash
+```bash
 git init
-\`\`\`
+git config
+Configures Git username or email.
 
-### git config
-- Configures Git username or email.
-- **Example**:
-\`\`\`bash
-git config --global user.name \"Your Name\"
-git config --global user.email \"Your Email\"
-\`\`\`
+Example:
 
-- View Config Values
-- **Example**:
-\`\`\`bash
+bash
+git config --global user.name "Your Name"
+git config --global user.email "Your Email"
+View Config Values
+
+Example:
+
+bash
 git config --global --list
-\`\`\`
+Basic Workflow
+git add
+Stages changes for commit.
 
----
+Example:
 
-## Basic Workflow
-
-### git add
-- Stages changes for commit.
-- **Example**:
-\`\`\`bash
+bash
 git add file.txt
-\`\`\`
+git commit
+Saves staged changes with a commit message.
 
-### git commit
-- Saves staged changes with a commit message.
-- **Example**:
-\`\`\`bash
-git commit -m \"Initial commit\"
-\`\`\`
+Example:
 
-### git push
-- Uploads local commits to the remote repository.
-- **Example**:
-\`\`\`bash
+bash
+git commit -m "Initial commit"
+git push
+Uploads local commits to the remote repository.
+
+Example:
+
+bash
 git push origin main
-\`\`\`
+git pull
+Fetches and merges changes from the remote repository.
 
-### git pull
-- Fetches and merges changes from the remote repository.
-- **Example**:
-\`\`\`bash
+Example:
+
+bash
 git pull origin main
-\`\`\`
-
----
-
-## Viewing Changes
-
-### git status
-- Shows the working directory status.
-- **Example**:
-\`\`\`bash
+Viewing Changes
 git status
-\`\`\`
+Shows the working directory status.
 
-### git log
-- Displays commit history.
-- **Example**:
-\`\`\`bash
+Example:
+
+bash
+git status
 git log
-\`\`\`
+Displays commit history.
 
-### git log --oneline --graph --decorate
-- Shows compact commit history with branch graph.
-- **Example**:
-\`\`\`bash
+Example:
+
+bash
+git log
 git log --oneline --graph --decorate
-\`\`\`
+Shows compact commit history with branch graph.
 
-### git diff
-- Shows changes between commits or working directory.
-- **Example**:
-\`\`\`bash
+Example:
+
+bash
+git log --oneline --graph --decorate
 git diff
-\`\`\`
-" > git-commands.md
+Shows changes between commits or working directory.
 
-# 2. Stage the file
-git add git-commands.md
+Example:
 
-# 3. Commit the file
-git commit -m "Add git commands reference"
-
-# 4. Push to GitHub
-git push origin main
+bash
+git diff
 
 
 ### Task 4: Stage and Commit
