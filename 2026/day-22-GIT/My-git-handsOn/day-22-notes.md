@@ -29,6 +29,20 @@
    - What it does (1 line)
    - An example of how to use it
 
+git config --global user.email "you@example.com"
+What it does: Sets your email for commits.
+
+Example:
+
+bash
+git config --global user.email "jeet@example.com"
+git config --list
+What it does: Displays all Git configuration.
+
+Example:
+
+bash
+git config --list
 🔹 Basic Workflow
 git init
 What it does: Initializes a new Git repository.
@@ -111,7 +125,6 @@ Work: git add, git commit
 Remote: git push, git pull
 
 View: git status, git log, git diff
-
 ---
 
 ### Task 4: Stage and Commit
