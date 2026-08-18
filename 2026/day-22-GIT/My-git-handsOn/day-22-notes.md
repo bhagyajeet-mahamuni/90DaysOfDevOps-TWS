@@ -4,7 +4,7 @@
 1. Verify Git is installed on your machine
 2. Set up your Git identity — name and email
 3. Verify your configuration
-
+![alt text](../images/Task1.png)
 ---
 
 ### Task 2: Create Your Git Project
