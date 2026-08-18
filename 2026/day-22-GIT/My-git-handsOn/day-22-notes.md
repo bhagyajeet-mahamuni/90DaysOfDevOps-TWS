@@ -29,8 +29,6 @@
    - What it does (1git config --global user.email "you@example.com"
 Sets your email for commits.
 
- Git Commands
-
 # Git Commands
 
 ## Setup & Config
@@ -141,7 +139,8 @@ git diff
 
 ```
 
----
+---------------------
+
 
 ## Task 3: Create Your Git Commands Reference
 
