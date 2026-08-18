@@ -15,6 +15,8 @@
 3. Check the status — read and understand what Git is telling you
 4. Explore the hidden `.git/` directory — look at what's inside
 
+![alt text](../images/Task2.png)
+
 ---
 
 ### Task 3: Create Your Git Commands Reference
