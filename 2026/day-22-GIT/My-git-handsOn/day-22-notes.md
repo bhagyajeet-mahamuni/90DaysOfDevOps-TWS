@@ -29,6 +29,8 @@
    - What it does (1git config --global user.email "you@example.com"
 Sets your email for commits.
 
+ Git Commands
+
 # Git Commands
 
 ## Setup & Config
@@ -38,78 +40,146 @@ Sets your email for commits.
 - **Example**:
 ```bash
 git init
-git config
-Configures Git username or email.
+```
 
-Example:
+### git config
 
-bash
+* Configures Git username or email.
+* **Example**:
+
+```bash
 git config --global user.name "Your Name"
 git config --global user.email "Your Email"
-View Config Values
+```
 
-Example:
+* View Config Values
+* **Example**:
 
-bash
+```bash
 git config --global --list
-Basic Workflow
-git add
-Stages changes for commit.
+```
 
-Example:
+---
 
-bash
+## Basic Workflow
+
+### git add
+
+* Stages changes for commit.
+* **Example**:
+
+```bash
 git add file.txt
-git commit
-Saves staged changes with a commit message.
+```
 
-Example:
+### git commit
 
-bash
+* Saves staged changes with a commit message.
+* **Example**:
+
+```bash
 git commit -m "Initial commit"
-git push
-Uploads local commits to the remote repository.
+```
 
-Example:
+### git push
 
-bash
+* Uploads local commits to the remote repository.
+* **Example**:
+
+```bash
 git push origin main
-git pull
-Fetches and merges changes from the remote repository.
+```
 
-Example:
+### git pull
 
-bash
+* Fetches and merges changes from the remote repository.
+* **Example**:
+
+```bash
 git pull origin main
-Viewing Changes
+```
+
+---
+
+## Viewing Changes
+
+### git status
+
+* Shows the working directory status.
+* **Example**:
+
+```bash
 git status
-Shows the working directory status.
+```
 
-Example:
+### git log
 
-bash
-git status
+* Displays commit history.
+* **Example**:
+
+```bash
 git log
-Displays commit history.
+```
 
-Example:
+### git log --oneline --graph --decorate
 
-bash
-git log
+* Shows compact commit history with branch graph.
+* **Example**:
+
+```bash
 git log --oneline --graph --decorate
-Shows compact commit history with branch graph.
+```
 
-Example:
+### git diff
 
-bash
-git log --oneline --graph --decorate
+* Shows changes between commits or working directory.
+* **Example**:
+
+```bash
 git diff
-Shows changes between commits or working directory.
+```
 
-Example:
+```
 
-bash
-git diff
+---
+
+## Task 3: Create Your Git Commands Reference
+
+Here is a concise Git commands reference to help you quickly recall essential commands:
+
+### Setup & Configuration
+- `git init`: Initialize a new Git repository.
+- `git config --global user.name "Your Name"`: Set your Git username.
+- `git config --global user.email "Your Email"`: Set your Git email.
+- `git config --global --list`: View all global Git configurations.
+
+### Basic Workflow
+- `git add <file>`: Stage changes for commit.
+- `git commit -m "message"`: Commit staged changes with a message.
+- `git push origin <branch>`: Push commits to remote branch.
+- `git pull origin <branch>`: Fetch and merge changes from remote.
+
+### Branching
+- `git branch`: List all branches.
+- `git branch <branch>`: Create a new branch.
+- `git checkout <branch>`: Switch to a branch.
+- `git checkout -b <branch>`: Create and switch to a new branch.
+- `git merge <branch>`: Merge a branch into the current branch.
+
+### Viewing Changes
+- `git status`: Show working directory status.
+- `git log`: Show commit history.
+- `git log --oneline --graph --decorate`: Show compact commit history with graph.
+- `git diff`: Show changes between commits or working directory.
+
+### Undo & Stash
+- `git reset --hard`: Discard all local changes.
+- `git stash`: Temporarily save changes.
+- `git stash pop`: Apply stashed changes and remove stash.
+
+This reference covers the most common Git commands you’ll use daily. Keep it handy for quick lookup!
+
+```
 
 
 ### Task 4: Stage and Commit
