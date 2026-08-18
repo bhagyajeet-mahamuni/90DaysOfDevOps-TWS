@@ -223,10 +223,10 @@ Answer these questions in your own words (add them to a `day-22-notes.md` file):
 
 5. What is the difference between a **working directory**, **staging area**, and **repository**?
   
-  **working directory** : This is the directory where all changes happens.
+     **working directory** : This is the directory where all changes happens.
 
-  **staging area** : This is the area where we keep all our files before commit.
+     **staging area** : This is the area where we keep all our files before commit.
 
-  **repository** : This is the area where your all files inside it get tracked so anything intentially or unintentially happened with them we are in palce to recover them successfully.
+     **repository** : This is the area where your all files inside it get tracked so anything intentially or unintentially happened with them we are in palce to recover them successfully.
 
 ---
