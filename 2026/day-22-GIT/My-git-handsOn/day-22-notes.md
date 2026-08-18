@@ -187,6 +187,9 @@ This reference covers the most common Git commands you’ll use daily. Keep it h
 3. Commit with a meaningful message
 4. View your commit history
 
+![alt text](../images/Task3.png)
+![alt text](../images/Task3-1.png)
+
 ---
 
 ### Task 5: Make More Changes and Build History
