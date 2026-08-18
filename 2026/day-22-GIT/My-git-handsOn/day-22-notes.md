@@ -29,8 +29,6 @@
    - What it does (1git config --global user.email "you@example.com"
 Sets your email for commits.
 
-Example:
-
 
 ---
 
