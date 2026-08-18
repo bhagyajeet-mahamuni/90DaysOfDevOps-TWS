@@ -29,55 +29,51 @@
    - What it does (1git config --global user.email "you@example.com"
 Sets your email for commits.
 
-Example:
+git config
 
-bash
-git config --global user.email "jeet@example.com"
-git config --list
-Displays all Git configuration.
+Configures Git username or email.
 
 Example:
 
 bash
-git config --list
+git config --global user.name "Your Name"
+git config --global user.email "Your Email"
+View Config Values
+
+Shows all Git configuration values.
+
+Example:
+
+bash
+git config --global --list
 Basic Workflow
-git init
-Initializes a new Git repository.
+git add
 
-Example:
-
-bash
-git init
-git clone <repo-url>
-Clones an existing repository.
-
-Example:
-
-bash
-git clone https://github.com/user/repo.git
-git add <file>
 Stages changes for commit.
 
 Example:
 
 bash
 git add file.txt
-git commit -m "message"
+git commit
+
 Saves staged changes with a commit message.
 
 Example:
 
 bash
 git commit -m "Initial commit"
-git push origin main
-Pushes commits to the remote repository.
+git push
+
+Uploads local commits to the remote repository.
 
 Example:
 
 bash
 git push origin main
-git pull origin main
-Fetches and merges changes from remote.
+git pull
+
+Fetches and merges changes from the remote repository.
 
 Example:
 
@@ -85,6 +81,7 @@ bash
 git pull origin main
 Viewing Changes
 git status
+
 Shows the working directory status.
 
 Example:
@@ -92,6 +89,7 @@ Example:
 bash
 git status
 git log
+
 Displays commit history.
 
 Example:
@@ -99,6 +97,7 @@ Example:
 bash
 git log
 git log --oneline --graph --decorate
+
 Shows compact commit history with branch graph.
 
 Example:
@@ -106,25 +105,13 @@ Example:
 bash
 git log --oneline --graph --decorate
 git diff
+
 Shows changes between commits or working directory.
 
 Example:
 
 bash
-git diff
-Quick Summary
-Setup: git config
-
-Start: git init, git clone
-
-Work: git add, git commit
-
-Remote: git push, git pull
-
-View: git status, git log, git diff line)
-   - An example of how to use it
-
-
+git 
 
 ---
 
