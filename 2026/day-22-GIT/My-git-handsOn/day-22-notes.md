@@ -203,24 +203,24 @@ This reference covers the most common Git commands you’ll use daily. Keep it h
 
 ---
 
-### Task 6: Understand the Git Workflow
+## Task 6: Understand the Git Workflow
 Answer these questions in your own words (add them to a `day-22-notes.md` file):
 
 
-## 1. Difference between `git add` and `git commit`
+### 1. Difference between `git add` and `git commit`
 - **git add**: Moves files from the untracked area to the staging area, preparing them for commit.  
 - **git commit**: Moves files from the staging area into the repository history. Once committed, files are tracked and can be recovered if deleted.
 
 ---
 
-## 2. What does the staging area do? Why doesn't Git just commit directly?
+### 2. What does the staging area do? Why doesn't Git just commit directly?
 - The **staging area** is a checkpoint where files are reviewed before committing.  
 - It allows you to decide exactly what will be committed and prevents accidental or unwanted commits.  
 - Git requires manual commits to give developers control over changes.
 
 ---
 
-## 3. What information does `git log` show you?
+### 3. What information does `git log` show you?
 - Displays commit history with details such as:
   - Commit IDs (unique cryptographic hashes)  
   - Author name and email  
@@ -231,14 +231,14 @@ Answer these questions in your own words (add them to a `day-22-notes.md` file):
 
 ---
 
-## 4. What is the `.git/` folder and what happens if you delete it?
+### 4. What is the `.git/` folder and what happens if you delete it?
 - The `.git/` folder contains all metadata and history of the repository.  
 - It monitors file creation, modification, deletion, and restoration.  
 - **If deleted**, Git will stop tracking changes, and the repository will lose its version control capabilities.
 
 ---
 
-## 5. Difference between Working Directory, Staging Area, and Repository
+### 5. Difference between Working Directory, Staging Area, and Repository
 - **Working Directory**: Where all changes are made (editing, adding, deleting files).  
 - **Staging Area**: Temporary holding area for files before committing.  
 - **Repository**: Permanent storage where committed files are tracked and versioned, allowing recovery if needed.
