@@ -206,7 +206,6 @@ This reference covers the most common Git commands you’ll use daily. Keep it h
 ### Task 6: Understand the Git Workflow
 Answer these questions in your own words (add them to a `day-22-notes.md` file):
 
-# Task 6: Understand the Git Workflow
 
 ## 1. Difference between `git add` and `git commit`
 - **git add**: Moves files from the untracked area to the staging area, preparing them for commit.  
