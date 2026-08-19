@@ -17,7 +17,7 @@
 
 ---
 
-## Configuration
+## Configuration (After completing this step, Git will correctly identify the author for each commit record.)
 ### git config --global user.name "Name"
 - Set global username for commits.
 
