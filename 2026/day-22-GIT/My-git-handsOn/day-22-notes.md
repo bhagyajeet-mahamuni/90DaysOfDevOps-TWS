@@ -206,32 +206,43 @@ This reference covers the most common Git commands you’ll use daily. Keep it h
 ### Task 6: Understand the Git Workflow
 Answer these questions in your own words (add them to a `day-22-notes.md` file):
 
-1. What is the difference between `git add` and `git commit`?
+# Task 6: Understand the Git Workflow
 
-  . git add is used to move the file from untrack area to staging area so it will move further to local repo and remote repo accordingly.
-    git commit is used to move the files from staging area to track area , once the file is added in it, we will able to track it or able to recover it if its get deleted.
+## 1. Difference between `git add` and `git commit`
+- **git add**: Moves files from the untracked area to the staging area, preparing them for commit.  
+- **git commit**: Moves files from the staging area into the repository history. Once committed, files are tracked and can be recovered if deleted.
 
-2. What does the **staging area** do? Why doesn't Git just commit directly?
+---
 
-  . staging is the area where files has been kept before actual commit haapens, where we will see what is going to be commited and if anything is unwanted then we can reassign back to the untrack stage. This will may be an extra check point before commit happens.
-  . Git will not perfrom any commit by it's own, rather we have to manually perfrom it according to our requirements and its benficial for us to avaoid any accidental or unwanted commit.
+## 2. What does the staging area do? Why doesn't Git just commit directly?
+- The **staging area** is a checkpoint where files are reviewed before committing.  
+- It allows you to decide exactly what will be committed and prevents accidental or unwanted commits.  
+- Git requires manual commits to give developers control over changes.
 
-3. What information does `git log` show you?
+---
 
-  . git log will give all the information of the changes which we have performed on that folder also is included commit ids which uses Crypographic hasing algorith to get unique commit id, also we will be able to see local and remote repo levels like they are on same level or up and down also we will able to see the comment message,author,date,brach details etc etc to track the acitivities.
+## 3. What information does `git log` show you?
+- Displays commit history with details such as:
+  - Commit IDs (unique cryptographic hashes)  
+  - Author name and email  
+  - Date and time of commit  
+  - Commit messages  
+  - Branch details  
+- Helps track activities and compare local vs. remote repository states.
 
-4. What is the `.git/` folder and what happens if you delete it?
+---
 
-  . .git folder is kind of monitor of the class, who monitors all the details happening on the repository it tracts all the activiy like file creation, modification, deletion, restoration of files and folder which are inside the git directory.
-  If we delete the .git folder , git will not perfrom their task like it will not monitor the any updation , deletion, retention of files under that direcoty. 
+## 4. What is the `.git/` folder and what happens if you delete it?
+- The `.git/` folder contains all metadata and history of the repository.  
+- It monitors file creation, modification, deletion, and restoration.  
+- **If deleted**, Git will stop tracking changes, and the repository will lose its version control capabilities.
 
-5. What is the difference between a **working directory**, **staging area**, and **repository**?
+---
 
-  
-     **working directory** : This is the directory where all changes happens.
+## 5. Difference between Working Directory, Staging Area, and Repository
+- **Working Directory**: Where all changes are made (editing, adding, deleting files).  
+- **Staging Area**: Temporary holding area for files before committing.  
+- **Repository**: Permanent storage where committed files are tracked and versioned, allowing recovery if needed.
 
-     **staging area** : This is the area where we keep all our files before commit.
-
-     **repository** : This is the area where your all files inside it get tracked so anything intentially or unintentially happened with them we are in palce to recover them successfully.
 
 ---
