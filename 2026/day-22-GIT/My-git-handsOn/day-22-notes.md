@@ -139,8 +139,6 @@ git diff
 
 ```
 
----------------------
-
 
 ## Task 3: Create Your Git Commands Reference
 
@@ -177,8 +175,6 @@ Here is a concise Git commands reference to help you quickly recall essential co
 - `git stash pop`: Apply stashed changes and remove stash.
 
 This reference covers the most common Git commands you’ll use daily. Keep it handy for quick lookup!
-
-```
 
 
 ### Task 4: Stage and Commit
