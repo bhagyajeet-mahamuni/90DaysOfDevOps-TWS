@@ -1,1 +1,281 @@
 This is the demo file to check the files walkthrough.
+
+
+# 90 Days of DevOps – Day 22
+
+## Git Basics & Git Workflow Practice
+
+This practice covers basic Git installation, configuration, repository creation, staging, committing, and understanding the Git workflow.
+
+---
+
+## Task 1: Install and Configure Git
+
+### Check Git Installation
+
+```bash
+git --version
+```
+
+### Configure Git Username
+
+```bash
+git config --global user.name "Your Name"
+```
+
+### Configure Git Email
+
+```bash
+git config --global user.email "you@example.com"
+```
+
+### Verify Configuration
+
+```bash
+git config --global --list
+```
+
+---
+
+## Task 2: Create Git Project
+
+### Create Project Directory
+
+```bash
+mkdir devops-git-practice
+cd devops-git-practice
+```
+
+### Initialize Git Repository
+
+```bash
+git init
+```
+
+### Check Repository Status
+
+```bash
+git status
+```
+
+### Explore `.git` Directory
+
+```bash
+ls -la .git
+```
+
+The `.git` directory contains Git's internal information, including repository history, branches, and configuration.
+
+---
+
+## Task 3: Git Commands Reference
+
+### Setup & Configuration
+
+| Command                                            | Purpose                         |
+| -------------------------------------------------- | ------------------------------- |
+| `git init`                                         | Initialize a new Git repository |
+| `git config --global user.name "Your Name"`        | Set Git username                |
+| `git config --global user.email "you@example.com"` | Set Git email                   |
+| `git config --global --list`                       | View Git configuration          |
+
+### Basic Workflow
+
+| Command                   | Purpose                                                 |
+| ------------------------- | ------------------------------------------------------- |
+| `git add <file>`          | Add changes to the staging area                         |
+| `git commit -m "message"` | Save staged changes to the repository                   |
+| `git push`                | Upload commits to a remote repository                   |
+| `git pull`                | Download and integrate changes from a remote repository |
+
+### Viewing Changes
+
+| Command                                | Purpose                        |
+| -------------------------------------- | ------------------------------ |
+| `git status`                           | Show current repository status |
+| `git diff`                             | Show unstaged changes          |
+| `git log`                              | Show commit history            |
+| `git log --oneline --graph --decorate` | Show compact commit history    |
+
+---
+
+## Task 4: Stage and Commit
+
+### Stage File
+
+```bash
+git add git-commands.md
+```
+
+### Check Staged Changes
+
+```bash
+git status
+```
+
+### Commit Changes
+
+```bash
+git commit -m "Add Git commands reference"
+```
+
+### View Commit History
+
+```bash
+git log --oneline
+```
+
+---
+
+## Task 5: Build Git History
+
+After making changes to `git-commands.md`:
+
+### Check Changes
+
+```bash
+git diff
+```
+
+### Stage Changes
+
+```bash
+git add git-commands.md
+```
+
+### Commit Changes
+
+```bash
+git commit -m "Add more Git commands"
+```
+
+Repeat this process at least **3 times** to create multiple commits.
+
+### View Compact History
+
+```bash
+git log --oneline --graph --decorate
+```
+
+---
+
+# Task 6: Git Workflow Notes
+
+## 1. Difference Between `git add` and `git commit`
+
+`git add` moves changes from the **working directory** to the **staging area**.
+
+`git commit` saves the staged changes into the **local Git repository**.
+
+```text
+Working Directory
+       |
+       | git add
+       ↓
+Staging Area
+       |
+       | git commit
+       ↓
+Git Repository
+```
+
+---
+
+## 2. What is the Staging Area?
+
+The staging area is a checkpoint before committing.
+
+It allows us to review and select which changes should be included in the next commit.
+
+Git does not automatically commit changes, which helps prevent unwanted commits.
+
+---
+
+## 3. What Does `git log` Show?
+
+`git log` shows the commit history of the repository.
+
+It provides information such as:
+
+* Commit ID
+* Author
+* Date
+* Commit message
+
+---
+
+## 4. What is the `.git/` Folder?
+
+The `.git/` folder contains Git's internal repository information.
+
+It stores information related to:
+
+* Commit history
+* Branches
+* Repository configuration
+* Git objects
+
+If the `.git/` folder is deleted, the directory will no longer be recognized as a Git repository.
+
+The project files themselves are not deleted.
+
+---
+
+## 5. Working Directory vs Staging Area vs Repository
+
+### Working Directory
+
+The place where we create and modify our project files.
+
+### Staging Area
+
+The area where we select changes that are ready for the next commit.
+
+### Repository
+
+The place where Git stores committed versions of the project.
+
+```text
+Working Directory
+       |
+       | git add
+       ↓
+Staging Area
+       |
+       | git commit
+       ↓
+Repository
+```
+
+---
+
+# Git Workflow
+
+The basic Git workflow is:
+
+```bash
+git status
+git add <file>
+git commit -m "message"
+git log
+```
+
+### Remember
+
+**Work → Stage → Commit → Track History**
+
+---
+
+## Day 22 Key Learning
+
+Today I learned:
+
+* How to install and configure Git
+* How to initialize a Git repository
+* How to check Git status
+* What the `.git` directory is
+* How the staging area works
+* How to create commits
+* How to view Git history
+* Difference between working directory, staging area, and repository
+* Basic Git workflow used in DevOps
